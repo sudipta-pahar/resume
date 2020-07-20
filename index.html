@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<title>SUDIPTA PAHAR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="aos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href="scrollprogressJS.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  *{
+    scroll-behavior: smooth;
+  }
+/*  #progress{
+    height: 15px;
+    background-color: linear-gradient(45deg, #06dee1, #79ff6c);
+    position: fixed;
+    top: 0;
+    left: 0;
+}*/
+
+  hr {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 20%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+  body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+  }
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+  .w3-sidebar {
+    width: 120px;background: #222;
+  }
+  #main {
+    margin-left: 120px
+  }
+
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track{
+    border: 2px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #06dee1, #79ff6c);
+    border-radius: 3px;
+    }
+
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+      }
+    }
+</style>
+<body class="w3-black">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="sudiptapahar.jpg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-book w3-xxlarge"></i>
+      <p>EDUCATION</p>
+    </a>
+    <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>EXPERIENCE</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-briefcase w3-xxlarge"></i>
+      <p>PROJECTS</p>
+    </a>
+    <a href="#certificates" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-certificate w3-xxlarge"></i>
+      <p>COURSES/ CERTIFICATES</p>
+    </a>
+    <a href="#awards" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-trophy w3-xxlarge"></i>
+      <p>AWARDS</p>
+    </a>
+
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-mobile w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+      <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+      <a href="#certificates" class="w3-bar-item w3-button" style="width:25% !important">COURSES/ CERTIFICATES</a>
+      <a href="#awards" class="w3-bar-item w3-button" style="width:25% !important">AWARDS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sudipta Pahar.</h1>
+      <p>Electronics freak cum Web Designer.</p>
+      <img src="sudiptapahar.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <!-- About Section -->
+      <div class="w3-right-align about" id="about" data-aos="fade-up">
+        <h2 class="w3-right-align w3-text-light-grey">Say my name</h2>
+        <hr style="width:100%; margin-right:0;" class="w3-opacity">
+        <p  align="w3-justify">By surfing this blog, you will get to know more about him and what he has accomplished through all these years. Ingenious and determined electronics engineer with working experience in the field of electronics and Web Development. Seeks to use first-class production design and process skills to push forward manufacturing excellence. Shown exceptional team management qualities and knowledge in the field of embedded and IoT in former companies. Has a keen knowledge on Digital Electronics, Power Electronics and 8051 microcontroller. Secure an eminent responsible career opportunity in the tech industry which will fully utilize my training and skills, ready to test my limits and boundaries, while making a significant contribution to the success of the company. To know more about Sudipta Pahar please consider navigating through the links for a better viewing. Want to know more about any project or just want to connect with the Sudipta Pahar? Don't hesitate to visit the contact me section.<br><br><br>
+        </p>
+      </div>
+
+<!-- Education Section -->
+
+    <div class="education" id="education" data-aos="fade-up">
+      <h2 class="w3-text-light-grey">Education</h2>
+    <hr style="width:100%" class="w3-opacity">
+      <div class="secondary" data-aos="fade-left">
+        <h3 class="w3-text-light-grey">Secondary School</h3>
+        <p align="w3-justify"><strong>DAV MODEL SCHOOL</strong><br> DURGAPUR, WEST BENGAL, INDIA <br> SECURED 9.2 CGPA</p>
+      </div>
+      <div class="senior-secondary" data-aos="fade-right">
+        <h3 class="w3-text-light-grey">Senior Secondary School</h3>
+        <p align="w3-justify"><strong>DAV MODEL SCHOOL</strong><br> DURGAPUR, WEST BENGAL, INDIA <br> SECURED 70.16%</p>
+      </div>
+      <div class="bachelor" data-aos="fade-left">
+        <h3 class="w3-text-light-grey">Bachelor of Technology</h3>
+        <p align="w3-justify"><strong>KIIT, Deemed to be University</strong><br> BHUBANESWAR, ODISHA, INDIA <br> SECURED 8.1 CGPA (pursuing)</p>
+      </div>
+    </div><br><br><br>
+
+<!-- Experience -->
+    <div class="w3-right-align experience" id="experience" data-aos="fade-up" >
+      <h2 class="w3-text-light-grey">Experience</h2>
+    <hr style="width:100%;margin-right:0" class="w3-opacity">
+      <div class="kohli" data-aos="fade-left">
+        <h3 class="w3-text-light-grey">The Kohli Media LLP</h2>
+          <h4 class="w3-text-light-grey">July'2020 - present</h4>
+        <p align="w3-justify"><strong>Web Development Intern</strong> <br> Single Handedle re-designed the homepage of the company.</p>
+      </div>
+      <div class="blackalphaa" data-aos="fade-right">
+        <h3 class="w3-text-light-grey">BlackAlphaa Solutions</h2>
+          <h4 class="w3-text-light-grey">March'2020 - April'2020</h4>
+        <p align="w3-justify"><strong>Internet of Things Intern </strong><br> Teamed up with another 4 interns, creating a group of 5, where each one of us were provided respective tasks and as together we were to design a solution to the problem statement provided by the employer<br> Successfully led to the designing of a prototype which would help the deaf, dumb, and blind to navigate, communicate and live their life on their own without any personal assistance.</p>
+      </div>
+    </div><br><br><br>
+
+<!-- Projects -->
+<div class="w3-left align projects" id="projects" data-aos="fade-up">
+  <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:100%" class="w3-opacity">
+  <div class="home-automation" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Home Automation Using IoT</h2>
+        <p align="w3-justify">
+          The idea was a prototype implementation of new home automation system using Wi-Fi technology. This System supports a wide range of home automation devices like power, management components and security components. The project presents a low-cost home control and monitoring system. An embedded microprocessor & microcontroller, with IP connectivity were used for accessing and controlling appliances using Smart phone app. This system doesn’t require a server (in future updates, we can implement the use of cloud storage and analyse the data to generate graphs and theoretical monthly energy bill and work upon the total energy consumption to reduce the monthly energy bills). In general, we propose the prototype implementation of home automation system that uses Wi-Fi technology and Android OS. Users can control electrical appliances from home or office via smart phone. Application will also provide secure notifications and alarm for, LPG leakage, fire hazards and Burglary and many more as decided by user. We will be trying to our utmost level to make the prototype more user friendly, so that we can reach our products to most remote corner of the country and no service engineers to be called for installation and modification.
+        </p>
+  </div>
+
+  <div class="smart-security" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Smart Security Using IoT</h2>
+        <h4>Minor Project</h4>
+        <p align="w3-justify">
+          Building IoT has progressed essentially in the last couple of years since it has created a new era in the world of information and communication technologies. Security is becoming an important issue nowadays as the possibilities of intrusion are increasing day by day. Safety from intrusion, theft, fire, and leakage of flammable gas are the most important requirements of a home security system for the people. Our working of the project is completely remote-based, the user will have a keyless password-protected door lock so that the user won’t have to carry a key with him/her every time he/she leaves the house. To enter, the user must enter the passkey correctly which should match the predefined password. If the password is correct, the door will unlock, or else it will remain closed. The information that the door is locked or unlocked shall be available on the web via the esp32 module as it will send the data through Wi-Fi over the internet to the think speak platform. This data (whether the door is open or not) can be accessed by the user form any part of the world. On top of it every time the user unlocks the door, he/she will be sent a notification which will be an optional feature. Now coming to the other parts of this security system, whenever the user closes the door, the main electrical power supply will be shut down as the MCB in the house will be turned off via a servo motor. This will prevent wastage of electricity as well as it will prevent any case any short circuit or fault. In addition to electricity, the water valve and the gas valve will also turn off preventing water leakage and gas leakage. The Proximity sensor comes into effect whenever the user closes the door from inside, then the proximity sensor detects the presence of a person inside the room and doesn’t allow the system to turn off the electricity and other systems. So, this proximity sensor ensures that all this protective equipment will come into action only if the user locks the door from inside and no one is present inside. We also have a gas sensor (MQ2) which will be present near the gas source (LPG cylinder) and it will continuously monitor whether there is any leakage or not. In case of any gas leakage, it will sound an alarm and turn off the gas valve thereby cutting off any further gas supply.
+        </p>
+  </div>
+
+  <div class="advanced-irrigation" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Advanced Irrigation System Using IoT</h2>
+        <p align="w3-justify">
+          In this project, we are trying to minimise the human effort required for irrigation, but not at the cost of decrease in Total Annual Productivity. We are trying to automate the irrigation process through which currently Advanced Farmer can look after his farm without even physically present at his field. This system has been programmed with the help of microcontroller in a way such that when the system goes ON, it gives the output information to the controller, and the information can be store in a database and it can be send to the owner with the help of internet. The useful information can be access by the owner for making decision related to his field no matter in which part of world he would be in. Almost every electronic component can be programmed and work independent of the human intervention. By putting our knowledge in controller we gave it ability to take decision on our behalf. One of the important thing that should be kept in mind during working with such controller is that they are hypersensitive because they work on 5 volt and our household supply is 240 volts. Large voltage can burn the controller shut down the system. So an efficient interfacing required between controller and the water motor. This system makes crop production much easier and this project uses a microcontroller, which commands the water pump and there are also soil-moisture sensors, which sense the moisture in the field. A rain sensor is been employed to spot rain and make the decision accordingly. If the farmer is at distant from his agricultural field he will be having a notion of current conditions. Thus, it saves farmer’s effort, water, time and his Agriculture.
+        </p>
+  </div>
+
+  <div class="cromos" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">CROMOS: CROwd MOnitoring System</h2>
+        <p align="w3-justify">
+           We are intending to prototype a is congestion monitoring mechanism which will monitor certain values and remotely distribute it among its users like spreading the crowd quality and type and differentiating it into certain warning zones, as exceptionally crowded, medium crowd to the local servers ahead of time so the individuals likely to visit those areas may predefine their visit before visiting those areas or change their area and on the off chance that they are predictable about the area, at that point they can pre-choose about the measure of time that would be squandered in playing out the specific work in that specific area.*Please note that we will not send the real time data count of the actual number of people present in the location(since it may cause a security issue at any point of time) to the user, but the type or quality of congestion(high/ medium/ low) will be sent to registered users of our system. This project consists of counter of people in movement using computer vision. About this counting, our system can count how many people getting in and out from the monitored zone.
+        </p>
+  </div>
+
+  <div class="delay-timer" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Delay Timer Circuit</h2>
+        <p align="w3-justify">
+           In many electronic circuit applications, a delay of a few seconds or minutes becomes a crucial requirement for ensuring correct operation of the circuit. Without the specified delay the circuit could malfunction or even get damaged. As the name propose, 555 timers is essentially a "Timer", which makes an oscillating pulse. It implies for quite a while pin 3 is HIGH and for quite a while it stays LOW, which will make an oscillating output. We can utilize this property of 555 clocks to make different clock circuits like 1 min clock circuit, 5 min clock circuit, 10 min clock circuit, 15 min clock circuit, and so forth. All we have to change the value of Resistor R1 as well as Capacitor C1. We have to set 555 clocks in Monostable mode to fabricate Timer. In monostable mode, the length for which the PIN 3 would stay HIGH, is given by the beneath formulae: T = 1.1 * R1*C1
+        </p>
+  </div>
+
+<div class="ac-controller" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">AC Controller using PWM</h2>
+        <p align="w3-justify">
+           Utilizing a typical rotating 10k potentiometer isn't the most intelligent thing one might want to introduce in a smart home. Since a rotating potentiometer is required to be used by the help of a user, by physically touching the devices, which in some cases might be dangerous, to dim the lights, we would require something which would be done by cell phones, smartly. Along these lines, here comes the AC DIMMER CIRCUIT USING MICROCONTROLLER, which can be controlled from anyplace, anytime. We noted the zero-cross with the full-bridge rectifier and the optocoupler. At that point we made a firing pulse applied the Opto-insulated DIAC through this resistor and an LED. We used Opto-insulated because this photocoupler has a light control of the diode inside so we separate the 5V from the Arduino and the 220V applied to the TRIAC. We read the zero-cross with the full-bridge rectifier and the optocoupler. At that point we make a firing pulse applied the Opto-insulated DIAC through this resistor and an LED.
+        </p>
+  </div>
+<div class="door-detector" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Door Status Detector</h2>
+        <p align="w3-justify">
+           The opening and closing of doors is detected using the Hall Effect sensor. A Hall effect sensor is a device that is used to measure the magnitude of a magnetic field. Its output voltage is directly proportional to the magnetic field strength through it. Hall effect sensors are used for proximity sensing, positioning, speed detection, and current sensing applications. Bringing a strong magnet or magnetic field towards the sensor would lead to the output pin to toggle, efficiently triggering the ON and OFF state of the lights. The output pins of the microcontroller is being latched here. This particular latch will remember a digital High reading at the output of the sensor until an opposing magnetic field is sensed, at which point it will drop to digital Low and stay there until it is triggered again.
+        </p>
+  </div>
+
+<div class="home-cleaning" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Automatic Home Cleaning System</h2>
+        <p align="w3-justify">
+           Moving around the room with vacuum cleaner hoses is a thing of the past. Smart homes use smart cleaning systems, which without any interruption goes on cleaning the floors, without any distraction or creating any problems to the people residing in the home. This project was a advancement over the obstacle avoidance bot, or can be described as a modification of it, where a vacuum system is being installed to the bot, which goes on cleaning the floor, autonomously, without colliding with the environment.
+        </p>
+  </div>
+
+  <div class="line-follower" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Line Follower Bot</h2>
+        <p align="w3-justify">
+           Moving around the room with vacuum cleaner hoses is a thing of the past. Smart homes use smart cleaning systems, which without any interruption goes on cleaning the floors, without any distraction or creating any problems to the people residing in the home. This project was a advancement over the obstacle avoidance bot, or can be described as a modification of it, where a vacuum system is being installed to the bot, which goes on cleaning the floor, autonomously, without colliding with the environment.
+        </p>
+  </div>
+
+    <div class="master-slave" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Master Slave Bot</h2>
+        <p align="w3-justify">
+           Swarm robotics is a new approach to the coordination of multi-robot systems which consist of large numbers of mostly simple physical robots. This approach emerged in the field of artificial swarm intelligence as well as the biological study of insects, ants and other fields in the nature, where a swarm behaviour occurs. Swarm Robotics is an emerging area in collective robotics which uses a fully distributed control paradigm and relatively simple robots to achieve coordinated behaviour at the group level. In Swarm Robotics, we through manual or autonomous way, control the working of the principal bot. The principal bot in turn controls all the remaining slave bots connected to it either through wireless medium. All the processes and paths followed by the master bot is invariantly passed on to the slave bot(s), which all are bound to follow the leader.
+        </p>
+  </div>
+
+  <div class="obstacle-avoidance" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Obstacle Avoidance Bot</h2>
+        <p align="w3-justify">
+           Obstacle Avoiding Robot is a smart gadget that can consequently detect the obstacle before it and stay away from it by turning itself toward another path. This structure permits the robot to explore in obscure conditions by staying away from crashes, which is an essential prerequisite for any self-sufficient portable robot. The utilization of the Obstacle Avoiding robot isn't constrained and it is utilized in a large portion of the military association now which assists convey with trip numerous hazardous occupations that are impossible by any warriors. The bot takes data from the number of ultrasonic sensors placed scientifically in the front hood of the bot which processes the data at all times and in case of any distance variation, lesser than the threshold value, triggers the microprocessor to rotate to the other direction where the distance in greater than the threshold value, thus, avoiding any collision.
+        </p>
+  </div>
+
+    <div class="smart-building" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Smart Building Using Thinkspeak</h2>
+        <p align="w3-justify">
+           This outcome of the project is to count the number of people in a room, counting through entry and exit detector. Whenever an object passes through PIR1 and then through PIR2, it means the person is added to previous person count of the room and the reverse. If happens, ie firstly it passes through PIR2 and then through PIR1, that means the object should be subtracted from the number of people previously residing in the room. When a person enters the room, count would be increased, whereas on leaving, the count would decrease. PIR sensing mechanism is used to sense the presence of visitors and the whole counting operation is done by a microcontroller
+
+        </p>
+  </div>
+
+  <div class="smart-switchboard" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Smart Switchboard using IoT</h2>
+        <p align="w3-justify">
+           Manually switching ON and OFF of 1-way or 2-way switches are things of the past. Currently this project revolves upon the idea of switching a device from a remote location, automatic turn ON or automatic turn OFF at preset time or after preset intervals of time and also make a routine of ON and OFF times of each day. The circuit would be controlled using the Wi-Fi module which would be embedded with the microprocessor and a clock module would be attached with the microcontroller to keep a track of time for efficient delay performance and turn ON and OFF at pre-set times, even after disconnection from the smartphones.
+        </p>
+  </div>
+
+  <div class="voice-control" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Voice Controlled Bot</h2>
+        <p align="w3-justify">
+           This project Voice Controlled Robotic Vehicle helps to control robot through voice commands received via android application. The integration of control unit with Bluetooth device is done to capture and read the voice commands. The robotic vehicle then operates as per the command received via android application. Arduino controls the movements of the robot according to received commands. The robot moves forwards, backwards, left and right, and stops according to the voice commands forward, backward, left, right and stop, respectively. Android smartphone with app. Android speech-recognition app used here was developed using MIT App Inventor. When the app is running in the smartphone, user’s voice commands are detected by the microphone present in the phone. Commands are processed, and speech-to-text conversion is done within the app using Google’s speech-recognition technology. Text is then sent to the receiver side (that is, robotic car) via Bluetooth Text received via Bluetooth is forwarded to Arduino Uno board using UART serial communication protocol. Arduino program checks the text received and, if it is a matching string, Arduino controls the movements of the robot accordingly.
+        </p>
+  </div>
+
+  <div class="filter-circuit" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Filter Circuit to convert distorted sound from GPIO pins to audio</h2>
+        <p align="w3-justify">
+          The Raspberry Pi is able to create audio using a pair of GPIO pins. The problem is that the audio is badly distorted. The low notes are too low and cause the speaker to rumble and sound blown, and the high notes have lots of unwanted noise. To assist with removing these noises,  this audio filter circuit was added to the original Raspberry Pi. An audio filter serves to remove unwanted frequencies. A low-pass filter removes high frequencies, and a high-pass filter removes low frequencies. The names say it all. The audio coming from the PWM is still very weak, and it’s made weaker by passing it through the filter. This is plenty if only need to power headphones, but it really isn’t enough to power speakers. We need an amplifier if we plan to do that.
+        </p>
+  </div>
+
+  <div class="IR-blaster" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Universal IR blaster using IoT, Frontend and Backend development</h2>
+        <p align="w3-justify">
+          Many a times it might happen that we might not be having a physical remote device for controlling any remote controlled devices like AC, TV etc. This website reduces all that pain. Just install this simple hardware infront of the receiver of such a device and control it from anywhere using the smartphone, using this website created by me. Now, a question might arise that there are many applications available free of cost in the market through which we can do so. But there is a catch in that. Firstly, your mobile device needs to have an IR blaster connected. Then the application will surely not be having all the remotely controlled devices, like it might not be having a feature for controlling an RC car, but, my application does that too! Moreover, you can add any number of remotes to this website, through the connected hardware, which will for the time being be available only for your own device, but at a later stage, after successful tests by the company, we might do an open market release for the same button which you have installed, certainly giving the credits to the owner.
+        </p>
+  </div>
+
+  <div class="IR-receiver" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Universal IR receiver using deep sleep power-saving mode</h2>
+        <p align="w3-justify">
+          This IoT device is a part of the previous protype, Universal IR blaster using IoT, Frontend and Backend development. This device is the receiver part of the same module, which is described before. The receiver receives the signal from any device having an IR blaster and sends it to the connected device, after decoding. The power saving mode is the main aim of this prototype. It happens that we are not needed to use the remote controller frequently, we changed to a particular receiving station, incase of a TV or set to particular temperature for AC and kept the remote away. Now, when we are not required any work of the IR receiver, it will still continue to receive signals (in this case garbage values, which can't be decoded), and that would be useless. Instead, we can just set the receiver to sleep until and unless it is required again. Here deep sleep comes to play.
+        </p>
+  </div>
+
+  <div class="smart-aid" data-aos="fade-right">
+      <h3 class="w3-text-light-grey">Smart aid for the differently-abled using advanced algorithms.</h2>
+        <p align="w3-justify">
+
+        </p>
+  </div>
+
+  <div class="kohli-media-homepage" data-aos="fade-left">
+      <h3 class="w3-text-light-grey">Re-Designing of Home Page for a media company</h2>
+        <p align="w3-justify">
+
+        </p>
+  </div>
+</div>
+<br><br><br>
+
+<div class="skills" id="skills" data-aos="fade-up">
+<h2 class="w3-text-light-grey">Skills</h2>
+    <hr style="width:100%;" class="w3-opacity">
+    <p class="w3-wide">C/C++</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Embedded</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Internet of Things</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:95%"></div>
+    </div>
+    <p class="w3-wide">PHP</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:70%"></div>
+    </div>
+    <p class="w3-wide">HTML</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:90%"></div>
+    </div>
+    <p class="w3-wide">CSS/ BootStrap/ CSS3</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:80%"></div>
+    </div>
+    <p class="w3-wide">SQL</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:80%"></div>
+    </div>
+    <p class="w3-wide">JavaScript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Circuit Simulation</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:20px;width:95%"></div>
+    </div><br>
+  </div><br><br><br>
+
+
+<div class="certificates" id="certificates" data-aos="fade-up">
+  <h2 class="w3-text-light-grey">Courses and Certificates</h2>
+    <hr style="width:100%; margin-right:0;" class="w3-right-align w3-opacity">
+  <ul>
+      <li><div class="skyfi-kolkata">
+        <h5 class="w3-text-light-grey">Embedded systems and IoT course at Skyfi labs, Kolkata</h5>
+      </div></li>
+      <li><div class="webtek">
+        <h5 class="w3-text-light-grey">Internet of things (IoT) seminar at WebTek labs private limited</h5>
+      </div></li>
+      <li><div class="freecodecamp">
+        <h5 class="w3-text-light-grey">Responsive Web Design course from freecodecamp.com</h5>
+      </div></li>
+      <li><div class="fullstack-udemy">
+        <h5 class="w3-text-light-grey">Full Stack Developer Course from Udemy.com</h5>
+      </div></li>
+      <li><div class="schneiderr">
+        <h5 class="w3-text-light-grey">Global Virtual Student Experience by Schneider Electric</h5>
+      </div></li>
+      <li><div class="hackerrank">
+        <h5 class="w3-text-light-grey">Problem Solving: Basic from Hackerrank</h5>
+      </div></li>
+      <li><div class="powergrid">
+        <h5 class="w3-text-light-grey">Industrial training at Powergrid Corporation of India Limited, Durgapur, WB for Electrical Engineering as working of substation line transmission and protection</h5>
+      </div></li>
+    </ul>
+    </div><br><br><br>
+
+
+
+    <div class="w3-right-align awards" id="awards" data-aos="fade-up">
+      <h2 class="w3-text-light-grey">Awards</h2>
+    <hr style="width:100%; margin-right: 0" class="w3-opacity">
+      <div class="lor-blackalphaa">
+        <h5 class="w3-text-light-grey">Received the Letter of Recomendation with the internship completion letter from BlackAlphaa System Solutions</h5>
+      </div>
+      <div class="kuriosity-1">
+        <h5 class="w3-text-light-grey">Published my manuscript on Advanced Irrigation System using IoT</h5>
+      </div>
+      <div class="kuriosity-2">
+        <h5 class="w3-text-light-grey">Published my manuscript on usage of Drones in entertainment industry, under the topic technology in entertainment industry</h5>
+      </div>
+    </div><br><br><br>
+
+
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" data-aos="fade-up">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15+</span><br>
+        Projects done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">8+</span><br>
+        Courses Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Seconds on this site
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button><br><br><br>
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact" data-aos="fade-up">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:100%" class="w3-opacity">
+
+    <div class="w3-section">
+      <p style="font-size: 15px; text-align: justify;"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Address: Kalyani, Kolkata, West Bengal, India</p>
+      <p style="font-size: 15px;"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7047770564</p>
+      <p style="font-size: 15px;"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: sudiptapahar@mail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.facebook.com/sudiptapahar123"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/the_pahar_sudipta/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://github.com/sudipta-pahar"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.hackerrank.com/sudiptapahar"><i class="fa fa-hacker-news w3-hover-opacity"></i>
+</a>
+    <p class="w3-medium">Designed by <a href=" " target="_blank" class="w3-hover-text-green">@sudiptapahar</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script type="text/javascript">
+    src="http://code.jquery.com/jquery-3.5.1.js"
+</script>
+<script type="text/javascript" src="aos.js"></script>
+<script type="text/javascript">
+  AOS.init({
+    duration:1000,
+  });
+</script>
+<script src="scrollprogressJS.js"></script>
+<!-- <script type="text/javascript">
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+            value = (scroll/(dh-wh))*100;
+        $('#progress').css('width', value+'%');
+  })
+</script> -->
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+    progressJS.start({
+      "color": "white",
+    });
+});
+</script>
+</body>
+</html>
